@@ -101,15 +101,23 @@
         }
 
         .tab-content-inner {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 40px 0;
         }
 
-        /* 联系人卡片 */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            justify-content: center;
+            padding: 0 20px;
+        }
+
         .contact-card {
             text-align: center;
-            padding: 40px;
+            padding: 30px;
         }
 
         /* 圆形头像 */
@@ -139,6 +147,19 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
+        .contact-avatar2 {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 35px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-image: url('images/members/yanjiusheng/陈靖雯.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
         .contact-card h3 {
             font-size: 28px;
             color: #333;
@@ -155,10 +176,17 @@
         }
 
         .contact-info-item {
-            display: flex;
+            display: flex;              /* 邮箱那一行横向排列 */
+            flex-direction: row;
             align-items: center;
-            padding: 15px 0;
-            border-bottom: 1px solid #e0e0e0;
+            gap: 2px;
+        }
+
+
+        .contact-info-extra {
+            margin-top: 10px;
+            color: #000000;
+            font-size: 18px;
         }
 
         .contact-info-item:last-child {
@@ -456,18 +484,41 @@
         <!-- Tab 内容 -->
         <div id="contactus" class="tab-content active">
             <div class="tab-content-inner">
-                <div class="contact-card">
-                    <!-- 圆形头像 -->
-                    <div class="contact-avatar1"></div>
-                    
-                    <!-- 姓名 -->
-                    <h3>谢天</h3>
-                    
-                    <!-- 联系信息 -->
-                    <div class="contact-info">
-                        <div class="contact-info-item">
-                            <span class="contact-info-label">邮箱：</span>
-                            <span class="contact-info-value">tian_xie@sjtu.edu.cn</span>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <!-- 圆形头像 -->
+                        <div class="contact-avatar1"></div>
+                        
+                        <!-- 姓名 -->
+                        <h3>谢天</h3>
+                        
+                        <!-- 联系信息 -->
+                        <div class="contact-info">
+                            <div class="contact-info-item">
+                                <span class="contact-info-label">邮箱：</span>
+                                <span class="contact-info-value">tian_xie@sjtu.edu.cn</span>
+                            </div>
+                            <div class="contact-info-extra">
+                                团队合作
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <!-- 圆形头像 -->
+                        <div class="contact-avatar2"></div>
+                        
+                        <!-- 姓名 -->
+                        <h3>陈靖雯</h3>
+                        
+                        <!-- 联系信息 -->
+                        <div class="contact-info">
+                            <div class="contact-info-item">
+                                <span class="contact-info-label">邮箱：</span>
+                                <span class="contact-info-value">chenjingwen@sjtu.edu.cn</span>
+                            </div>
+                            <div class="contact-info-extra">
+                                网络支持
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -527,33 +578,29 @@
                 </div>
             </div>
         </div>
-
+<!-- 
         <div id="partners" class="tab-content">
             <div class="tab-content-inner">
                 <div class="partners-grid">
-                    <!-- 合作伙伴 1 -->
                     <div class="partner-card">
                         <img src="images/partners/partner1.png" alt="Partner 1 Logo" class="partner-logo">
                         <a href="https://im.sjtu.edu.cn/" class="partner-link" target="_blank">装备智能运维与大数据研究中心</a>
                     </div>
-                    <!-- 合作伙伴 2 -->
                     <div class="partner-card">
                         <img src="images/partners/partner2.png" alt="Partner 2 Logo" class="partner-logo">
                         <a href="https://shetc.sjtu.edu.cn/#/" class="partner-link" target="_blank">上海交通大学电梯检测中心</a>
                     </div>
-                    <!-- 合作伙伴 3 -->
                     <div class="partner-card">
                         <img src="images/partners/partner3.png" alt="Partner 3 Logo" class="partner-logo">
                         <a href="https://www.gzlab.ac.cn/About/index.html" class="partner-link" target="_blank">广州国家实验室</a>
                     </div>
-                    <!-- 合作伙伴 4 -->
                     <div class="partner-card">
                         <img src="images/partners/partner4.png" alt="Partner 4 Logo" class="partner-logo">
                         <a href="http://www.leadhealthcare.com.cn/" class="partner-link" target="_blank">利德健康</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </section>
 

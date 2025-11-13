@@ -168,8 +168,8 @@
         .column-grid-3 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            max-width: 1200px;
+            gap: 40px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
@@ -222,7 +222,7 @@
             background-color: #D8DAE6;
             border: 2px solid #D8DAE6;
             border-radius: 8px;
-            padding: 60px 40px;
+            padding: 15px 15px;
             text-align: center;
             transition: all 0.3s;
             cursor: pointer;
@@ -319,7 +319,7 @@
         <div class="tab-navigation">
             <button class="tab-btn active" onclick="switchTab('test')">测试测量</button>
             <button class="tab-btn" onclick="switchTab('analysis')">分析决策</button>
-            <button class="tab-btn" onclick="switchTab('engineering')">场景应用</button>
+            <button class="tab-btn" onclick="switchTab('engineering')">集成输出</button>
         </div>
 
         <!-- Tab 内容 -->
@@ -385,33 +385,51 @@
                     <!-- 第一列：医工交叉 -->
                     <div class="column-section">
                         <div class="column-title">实验系统研发</div>
-                        <div class="box-item-vertical">
-                            <div class="item">无人实验平台</div>
-                            <div class="item">高端科学仪器</div>
-                            <div class="item">智能制造装备</div>
-                            <div class="item">科学实验智能体</div>
+                        <div class="box-item">
+                            <h4>无人实验平台</h4>
+                        </div>
+                        <div class="box-item">
+                            <h4>高端科学仪器</h4>
+                        </div>
+                        <div class="box-item">
+                            <h4>智能制造装备</h4>
+                        </div>
+                        <div class="box-item">
+                            <h4>实验智能体</h4>
                         </div>
                     </div>
                     
                     <!-- 第二列：变革材料 -->
                     <div class="column-section">
                         <div class="column-title">物质创制</div>
-                        <div class="box-item-vertical">
-                            <div class="item">抗体药物</div>
-                            <div class="item">荧光蛋白</div>
-                            <div class="item">凝胶载体</div>
-                            <div class="item">喷墨砂型</div>
-                            <div class="item">力电材料</div>
+                        <div class="box-item">
+                            <h4 class="item">抗体药物</h4>
+                        </div>
+                        <div class="box-item">
+                            <h4 class="item">荧光蛋白</h4>
+                        </div>
+                        <div class="box-item">
+                            <h4 class="item">凝胶载体</h4>
+                        </div>
+                        <div class="box-item">
+                            <h4 class="item">喷墨砂型</h4>
+                        </div>
+                        <div class="box-item">
+                            <h4 class="item">力电材料</h4>
                         </div>
                     </div>
-                    
+                
                     <!-- 第三列：界面动力学 -->
                     <div class="column-section">
                         <div class="column-title">界面动力学发现</div>
-                        <div class="box-item-vertical">
-                            <div class="item">接触</div>
-                            <div class="item">润湿</div>
-                            <div class="item">粘吸附</div>
+                        <div class="box-item">
+                            <h4 class="item">接触</h4>
+                        </div>
+                        <div class="box-item">
+                            <h4 class="item">润湿</h4>
+                        </div>
+                        <div class="box-item">
+                            <h4 class="item">粘吸附</h4>
                         </div>
                     </div>
                 </div>
